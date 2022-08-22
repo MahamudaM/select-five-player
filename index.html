@@ -14,7 +14,7 @@
         <!-- players section -->
         <section class="mt-9 container mx-auto">
             <div class="contan  ">
-                <div class="playersAndCalult flex ">
+                <div class="playersAndCalult flex  ">
                     <div class="players basis-9/12 grid grid-cols-3 gap-4">
 
 
@@ -112,9 +112,9 @@
                     <div class="calculators basis-1/4 ml-2">
                         <div class="calcultWrepper grid gap-4">
                             <!-- ul list -->
-                            <div class="calculat bg-slate-800 text-white p-2">
-                                <h1>Selected - V</h1>
-                                <ul>
+                            <div class="calculat bg-slate-800 p-2">
+                                <h1 class="text-white text-center text-2xl">Selected - V</h1>
+                                <ul class="text-white">
                                     <li>plauer1</li>
                                     <li>plauer1</li>
                                     <li>plauer1</li>
@@ -123,11 +123,35 @@
                                 </ul>
                             </div>
                             <!-- player cost calculator -->
-                            <div class="calculat bg-slate-800 text-white p-2">
-                                <h1>Budget</h1>
-                                <div class="perPlayer">
-                                    <label for=""></label>
-                                <input type="text">
+                            <div class="calculat bg-slate-800  p-2">
+                                <h1 class="text-white text-center text-2xl my-5">Budget</h1>
+                                <div class="perPlayer flex flex-col justify-items-center items-center">
+                                  <div class="perPlyerInput">
+                                    <label for="" class="text-white ">Per Player</label>
+                                    <input type="text" class="w-20">
+                                  </div>
+                                <button id="selectBtn" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate</button>
+                               
+                                </div>
+                                <!-- total calculator -->
+                                <div class="totalCost flex flex-col justify-items-center items-center">
+                                    <div class="playerExpns  flex flex-row "> 
+                                        <span class="text-white">Player Expenses:</span>
+                                        <span class="text-white">$<span>500</span></span>
+                                    </div>
+                                    <div class="maneger my-5">
+                                        <label for="" class="text-white">Maneger</label>
+                                        <input type="text" class="w-20">
+                                    </div>
+                                    <div class="coach">
+                                        <label for="" class="text-white">Coach</label>
+                                        <input type="text" class="w-20">
+                                    </div>
+                                    <button id="selectBtn" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate</button>
+                                    <div class="totalAmaund  flex flex-row ">
+                                        <p class="text-white">total:</p>
+                                        <span class="text-white">$<span>9990</span></span>
+                                    </div>
                                 </div>
                             </div>
 
