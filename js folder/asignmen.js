@@ -1,7 +1,7 @@
 // added event listener on the select button
 document.getElementById('selectBtn1').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
-    console.log(selectElenent.childNodes);
+    // console.log(selectElenent.childNodes);
     const liNew = document.createElement('li');
     liNew.innerText = "Lionel Messi";
     selectElenent.appendChild(liNew);
@@ -71,40 +71,80 @@ document.getElementById('selectBtn5').addEventListener('click',function(){
     const liNew = document.createElement('li');
     liNew.innerText = "Sergio Ramos";
     selectElenent.appendChild(liNew);
-
-     // disable button
-     const disabl= document.getElementById('selectBtn5')
-     if(selectElenent.innerText==="Sergio Ramos"){
-         
-         disabl.setAttribute('disabled',true)
-         
-     }
-     else{
-         disabl.removeAttribute('disabled')
-     }
+// disable button
+const disabl= document.getElementById('selectBtn5')
+if(selectElenent.innerText==="Sergio Ramos"){
+    
+    disabl.setAttribute('disabled',true)
+    
+}
+else{
+    disabl.removeAttribute('disabled')
+}
+    
 })
-//button6 
+
+//button6
+
 document.getElementById('selectBtn6').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
-   const listValu = document.getElementById('listValu')
-    const liNew = document.createElement('li');
-    liNew.innerText = listValu.innerText;
-    selectElenent.appendChild(liNew);
-    // disable button
-    const disabl= document.getElementById('selectBtn6');
-   
-    const selectElenentLI = document.querySelectorAll("#selectOlList ul");
-    if(selectElenentLI.innerText===listValu.innerText){
-        disabl.setAttribute('disabled',true) 
-    }
-    else{
-        disabl.removeAttribute('disabled')
-    }
+    const liNew6 = document.createElement('li');
+    liNew6.innerText = "Renato Sanches";
+    selectElenent.appendChild(liNew6);
+// disable button
+ 
+const disabl= document.getElementById('selectBtn6')
+if(selectElenent.innerHTML===" <li>Renato Sanches </li>"){
+    
+    disabl.setAttribute('disabled',true)
+    
+}
+else{
+    disabl.removeAttribute('disabled')
+}
+    
 })
-// get nodelist length
+
+// per player cost calculator
+document.getElementById('playerCostBtn').addEventListener('click',function(){
+  const inputPlayerCost = document.getElementById('playerCostInputFeld')
+ const playerCostAmount =  inputPlayerCost.value
+ const parsPlyerAmount =parseFloat(playerCostAmount);
+//  function emteyInput(){
+//     if(inputPlayerCost.value===" "){
+//         alert('place type a number')
+//     }
+//  }
+
+// ul list
 const ulNodelstLength = document.getElementById('selectOlList');
-let legthOfList = ulNodelstLength.childNodes.length;
-console.log(legthOfList);
+let lengthOfList = ulNodelstLength.childNodes.length;
+const getRootList = lengthOfList -1;
+const parsListLength = parseFloat(getRootList);
+
+// total player cost
+const multiplyTotalPayer = parsPlyerAmount*parsListLength
+ console.log(multiplyTotalPayer)
+//  total Expenses
+const expensElement = document.getElementById('totalExpens');
+expensElement.innerText = multiplyTotalPayer;
+
+})
+
+
+
+
+
+const placeUl = document.querySelector("#selectOlList ul");
+
+
+
+
+
+
+
+// get nodelist length
+
 
 
 // const selectElenentOl = document.querySelector("#selectOlList")

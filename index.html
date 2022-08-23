@@ -122,16 +122,16 @@
                                 <div class="perPlayer flex flex-col justify-items-center items-center">
                                   <div class="perPlyerInput">
                                     <label for="" class="text-white ">Per Player</label>
-                                    <input type="text" class="w-20">
+                                    <input id="playerCostInputFeld" type="text" class="w-20">
                                   </div>
-                                <button id="selectBtn" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate</button>
+                                <button id="playerCostBtn" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate</button>
                                
                                 </div>
                                 <!-- total calculator -->
                                 <div class="totalCost flex flex-col justify-items-center items-center">
                                     <div class="playerExpns  flex flex-row "> 
                                         <span class="text-white">Player Expenses:</span>
-                                        <span class="text-white">$<span>500</span></span>
+                                        <span class="text-white ">$<span id="totalExpens">00</span></span>
                                     </div>
                                     <div class="maneger my-5">
                                         <label for="" class="text-white">Maneger</label>
@@ -141,7 +141,7 @@
                                         <label for="" class="text-white">Coach</label>
                                         <input type="text" class="w-20">
                                     </div>
-                                    <button id="selectBtn" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate</button>
+                                    <button id="finalExpens" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate total</button>
                                     <div class="totalAmaund  flex flex-row ">
                                         <p class="text-white">total:</p>
                                         <span class="text-white">$<span>9990</span></span>
