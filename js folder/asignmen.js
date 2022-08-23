@@ -131,18 +131,35 @@ expensElement.innerText = multiplyTotalPayer;
 
 })
 
+// all  expenses calcolation
+document.getElementById('finalExpens').addEventListener('click',function(){
+    const playerExpensElement = document.getElementById('totalExpens');
+    const playerExpensValu = playerExpensElement.innerText
+    const parsPlayerExpen = parseFloat(playerExpensValu);
+    // maneger cost
+    const manegerElement = document.getElementById('manegerInputFild');
+    const manegerInputValu = manegerElement.value;
+    const parsManegerInput = parseFloat(manegerInputValu);
+
+    // coach expenses
+    const coachExpens = document.getElementById('coachInputFild');
+    const coachFildValu = coachExpens.value;
+    const parsCoachInput = parseFloat(coachFildValu);
+    // final expens calculat
+    const finalExpensForAll = parsPlayerExpen + parsManegerInput + parsCoachInput ;
+    const finalResult = document.getElementById('totalCalculation');
+    finalResult.innerText = finalExpensForAll;
+})
+
+
+
+
+
 
 
 
 
 const placeUl = document.querySelector("#selectOlList ul");
-
-
-
-
-
-
-
 // get nodelist length
 
 
