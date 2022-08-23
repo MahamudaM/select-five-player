@@ -10,7 +10,7 @@ document.getElementById('selectBtn1').addEventListener('click',function(){
         selectElenent.appendChild(liNew);
     }
     else{
-        return;
+        alert("you dont added ul list more then 5");
     }
     
  // disable button
@@ -29,7 +29,7 @@ document.getElementById('selectBtn2').addEventListener('click',function(){
         selectElenent.appendChild(liNew);
     }
     else{
-        return;
+        alert("you dont added ul list more then 5");
     }
      // disable button
      document.getElementById('selectBtn2').disabled = true;
@@ -48,7 +48,7 @@ document.getElementById('selectBtn3').addEventListener('click',function(){
         selectElenent.appendChild(liNew);
     }
     else{
-        return;
+        alert("you dont added ul list more then 5");
     }
      // disable button
      document.getElementById('selectBtn3').disabled = true;
@@ -67,7 +67,7 @@ document.getElementById('selectBtn4').addEventListener('click',function(){
         selectElenent.appendChild(liNew);
     }
     else{
-        return;
+        alert("you dont added ul list more then 5");
     }
      // disable button
      document.getElementById('selectBtn4').disabled = true;
@@ -87,7 +87,7 @@ document.getElementById('selectBtn5').addEventListener('click',function(){
         selectElenent.appendChild(liNew);
     }
     else{
-        return;
+        alert("you dont added ul list more then 5");
     }
 // disable button
 document.getElementById('selectBtn5').disabled = true;
@@ -108,7 +108,7 @@ document.getElementById('selectBtn6').addEventListener('click',function(){
         selectElenent.appendChild(liNew6);
     }
     else{
-        return;
+        alert("you dont added ul list more then 5");
     }
 
 // disable button
