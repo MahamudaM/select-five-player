@@ -1,10 +1,18 @@
 // added event listener on the select button
 document.getElementById('selectBtn1').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
+    
     // console.log(selectElenent.childNodes);
     const liNew = document.createElement('li');
     liNew.innerText = "Lionel Messi";
-    selectElenent.appendChild(liNew);
+    // list condition
+    if(selectElenent.childNodes.length<6){
+        selectElenent.appendChild(liNew);
+    }
+    else{
+        return;
+    }
+    
  // disable button
  document.getElementById('selectBtn1').disabled = true;
    
@@ -15,7 +23,14 @@ document.getElementById('selectBtn2').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
     const liNew = document.createElement('li');
     liNew.innerText = "Neymar Jr";
-    selectElenent.appendChild(liNew);
+    // selectElenent.appendChild(liNew);
+    // list condition
+    if(selectElenent.childNodes.length<6){
+        selectElenent.appendChild(liNew);
+    }
+    else{
+        return;
+    }
      // disable button
      document.getElementById('selectBtn2').disabled = true;
 
@@ -26,7 +41,15 @@ document.getElementById('selectBtn3').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
     const liNew = document.createElement('li');
     liNew.innerText = "Kylian Mbappé";
-    selectElenent.appendChild(liNew);
+    // selectElenent.appendChild(liNew);
+
+    // list condition
+    if(selectElenent.childNodes.length<6){
+        selectElenent.appendChild(liNew);
+    }
+    else{
+        return;
+    }
      // disable button
      document.getElementById('selectBtn3').disabled = true;
 
@@ -37,7 +60,15 @@ document.getElementById('selectBtn4').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
     const liNew = document.createElement('li');
     liNew.innerText = "Vítor Machado";
-    selectElenent.appendChild(liNew);
+    // selectElenent.appendChild(liNew);
+
+    // list condition
+    if(selectElenent.childNodes.length<6){
+        selectElenent.appendChild(liNew);
+    }
+    else{
+        return;
+    }
      // disable button
      document.getElementById('selectBtn4').disabled = true;
 
@@ -49,7 +80,15 @@ document.getElementById('selectBtn5').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
     const liNew = document.createElement('li');
     liNew.innerText = "Sergio Ramos";
-    selectElenent.appendChild(liNew);
+    // selectElenent.appendChild(liNew);
+
+    // list condition
+    if(selectElenent.childNodes.length<6){
+        selectElenent.appendChild(liNew);
+    }
+    else{
+        return;
+    }
 // disable button
 document.getElementById('selectBtn5').disabled = true;
    
@@ -63,8 +102,15 @@ document.getElementById('selectBtn6').addEventListener('click',function(){
     const selectElenent = document.getElementById('selectOlList');
     const liNew6 = document.createElement('li');
     liNew6.innerText = "Renato Sanches";
-    selectElenent.appendChild(liNew6);
-     
+    // selectElenent.appendChild(liNew6);
+     //list condition
+    if(selectElenent.childNodes.length<6){
+        selectElenent.appendChild(liNew6);
+    }
+    else{
+        return;
+    }
+
 // disable button
 
 document.getElementById('selectBtn6').disabled = true;
@@ -72,15 +118,7 @@ document.getElementById('selectBtn6').disabled = true;
     
 })
 
-// function alertList(callFunction){
-//     if( selectElenent.childNodes.length <=4){
-//         return "danger"
-//     }
-    
-// }
-// const listFuncionValu = document.getElementById('selectOlList')
-// let functionInput = listFuncionValu.childNodes.length 
-// const callFunction = function alertList(functionInput)
+
 
 // per player cost calculator
 document.getElementById('playerCostBtn').addEventListener('click',function(){

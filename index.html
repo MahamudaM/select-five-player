@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-800">
-    <header class="mb-5 bg-black">
+    <header class="mb-16 bg-black">
         <div class="wrepperContent flex">
            <div class="image basis-1/4 ">
             <img src="images/Banner Image.png" alt="">
@@ -24,14 +24,14 @@
     </header>
     <main>
         <!-- players section -->
-        <section class="mt-9 container mx-auto">
+        <section class="mt-16 container mx-auto">
             <div class="contan  ">
                 <div class="playersAndCalult flex  ">
                     <div class="players basis-9/12 grid grid-cols-3 gap-4">
 
 
                         <!-- single player start -->
-                        <div class="Plauer border border-orange-100 bg-black text-white">
+                        <div class="Plauer border border-slate-600 bg-black text-white">
                             <img src="images/6.png" alt="">
                             <div class="plyerInfo flex flex-col justify-items-center items-center p-5">
                                 <h1 class="text-2xl font-medium">Lionel Messi</h1>
@@ -45,7 +45,7 @@
                         </div>
                         <!-- single player end -->
                         <!-- single player start -->
-                        <div class="Plauer border border-indigo-600 bg-black text-white">
+                        <div class="Plauer border border-slate-600 bg-black text-white">
                             <img src="images/8.png" alt="">
                             <div class="plyerInfo flex flex-col justify-items-center items-center p-5">
                                 <h1 class="text-2xl font-medium">Neymar Jr</h1>
@@ -59,7 +59,7 @@
                         </div>
                         <!-- single player end -->
                         <!-- single player start -->
-                        <div class="Plauer border border-indigo-600 bg-black text-white">
+                        <div class="Plauer border border-slate-600 bg-black text-white">
                             <img src="images/3.png" alt="">
                             <div class="plyerInfo flex flex-col justify-items-center items-center p-5">
                                 <h1 class="text-2xl font-medium">Kylian Mbappé</h1>
@@ -73,7 +73,7 @@
                         </div>
                         <!-- single player end -->
                         <!-- single player start -->
-                        <div class="Plauer border border-indigo-600 bg-black text-white">
+                        <div class="Plauer border border-slate-600 bg-black text-white">
                             <img src="images/image2.png" alt="">
                             <div class="plyerInfo flex flex-col justify-items-center items-center p-5">
                                 <h1 class="text-2xl font-medium">Vítor Machado</h1>
@@ -87,7 +87,7 @@
                         </div>
                         <!-- single player end -->
                         <!-- single player start -->
-                        <div class="Plauer border border-indigo-600 bg-black text-white">
+                        <div class="Plauer border border-slate-600 bg-black text-white">
                             <img src="images/4.png" alt="">
                             <div class="plyerInfo flex flex-col justify-items-center items-center p-5">
                                 <h1 class="text-2xl font-medium">Sergio Ramos</h1>
@@ -101,7 +101,7 @@
                         </div>
                         <!-- single player end -->
                         <!-- single player start -->
-                        <div class="Plauer border border-indigo-600 bg-black text-white">
+                        <div class="Plauer border border-slate-600 bg-black text-white">
                             <img src="images/5.png" alt="">
                             <div class="plyerInfo flex flex-col justify-items-center items-center p-5">
                                 <h1 class="text-2xl font-medium" id="listValu">Renato Sanches</h1>
@@ -114,29 +114,26 @@
                             
                         </div>
                         <!-- single player end -->
-
-
-
                     </div>
                     <!-- ul list and calculator -->
                     <div class="calculators basis-1/4 ml-2">
                         <div class="calcultWrepper grid gap-4">
                             <!-- ul list -->
-                            <div class="calculat bg-black p-2">
+                            <div class="calculat bg-black p-2 border border-slate-600">
                                 <h1 class="text-white text-center text-2xl">Selected - V</h1>
                                 <ul id="selectOlList" class="text-white">
                         
                                 </ul>
                             </div>
                             <!-- player cost calculator -->
-                            <div class="calculat bg-black  p-2">
+                            <div class="calculat bg-black  p-2 border border-slate-600">
                                 <h1 class="text-white text-center text-2xl my-5">Budget</h1>
                                 <div class="perPlayer flex flex-col justify-items-center items-center">
                                   <div class="perPlyerInput">
                                     <label for="" class="text-white ">Per Player</label>
                                     <input id="playerCostInputFeld" type="text" class="w-20">
                                   </div>
-                                <button id="playerCostBtn" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate</button>
+                                <button id="playerCostBtn" class="bg-blue-700 text-white py-2 px-16 font-medium my-5 ">Calculate</button>
                                
                                 </div>
                                 <!-- total calculator -->
@@ -156,7 +153,7 @@
                                     <button id="finalExpens" class="bg-blue-700 text-white py-2 px-14 font-medium my-5 ">Calculate total</button>
                                     <div class="totalAmaund  flex flex-row ">
                                         <p class="text-white">total:</p>
-                                        <span class="text-white">$<span id="totalCalculation">00</span></span>
+                                        <p class="text-white">$<span id="totalCalculation">00</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -168,6 +165,10 @@
             </div>
         </section>
     </main>
+    <footer class="mt-9 py-12">
+        <hr>
+        <p class="text-white text-center text-xl mt-16">Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
     <script src="js folder/asignmen.js"></script>
 </body>
 </html>
